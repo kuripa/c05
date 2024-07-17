@@ -6,7 +6,7 @@
 /*   By: nfuhrman <nfuhrman@student.42wolfsburg.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 17:23:09 by nfuhrman          #+#    #+#             */
-/*   Updated: 2024/07/17 17:30:31 by nfuhrman         ###   ########.fr       */
+/*   Updated: 2024/07/17 18:07:48 by nfuhrman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	prime_checker(int n, int base)
@@ -24,4 +24,3 @@ int	ft_is_prime(int nb)
 {
 	return (prime_checker(2, nb));
 }
-
