@@ -9,6 +9,7 @@
 /*   Updated: 2024/07/17 18:07:48 by nfuhrman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 int	prime_checker(int n, int base)
 {
 	if (base % n == 0 || base < 2)
@@ -22,5 +23,7 @@ int	prime_checker(int n, int base)
 
 int	ft_is_prime(int nb)
 {
+	if (nb == 2)
+		return (1);
 	return (prime_checker(2, nb));
 }

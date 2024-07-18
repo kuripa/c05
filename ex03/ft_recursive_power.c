@@ -6,14 +6,18 @@
 /*   By: nfuhrman <nfuhrman@student.42wolfsburg.de  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 23:52:29 by nfuhrman          #+#    #+#             */
-/*   Updated: 2024/07/17 00:03:43 by nfuhrman         ###   ########.fr       */
+/*   Updated: 2024/07/18 16:23:25 by nfuhrman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+/*#include <stdio.h>*/
 
 int	ft_recursive_power(int nb, int power)
 {
-	if (power < 1)
+	if (power < 0)
+	{
+		return (0);
+	}
+	if (power == 0)
 	{
 		return (1);
 	}
@@ -29,5 +33,6 @@ int	ft_recursive_power(int nb, int power)
 /*	printf("100:%d\n", ft_recursive_power(10, 2));*/
 /*	printf("256:%d\n", ft_recursive_power(2, 8));*/
 /*	printf("216:%d\n", ft_recursive_power(6, 3));*/
+/*	printf("1:%d\n", ft_recursive_power(0, 0));*/
 /*	return (0);*/
 /*}*/
